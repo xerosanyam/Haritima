@@ -1,0 +1,538 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Haritima | Go Green !</title>
+<meta name="description" content="First Inter College Green Fest Of Uttarakhand.">
+		<meta name="author" content="Sanyam Jain">
+		<link rel="shortcut icon" href="http://www.iconj.com/favicon.php?user=xerosanyam" />
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.css">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="css/forkit.css">
+
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+	 body {
+      padding-bottom: 0px;
+      color: #5a5a5a;
+	 
+    }
+    
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      margin-top: 5px;
+	  margin-right: 25px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 0px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 100px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 90px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 1;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+	.Ticker {
+	font-size: 22px;
+	padding: 5px;
+	height: 40px;
+	font-family:"Times New Roman",Georgia,Serif;
+	color: white;
+	background: #041301;
+}
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+  </head>
+
+  <body>
+		<div class="meny">
+  		<div class="menu">
+			<br><br>
+			<h2>Formal Events</h2>
+			<ul>
+				<li><a href="/Dramatize.html"><i class="icon-facetime-video"></i>&nbsp;Dramatize</a></li>
+				<li><a href="/GreenCombat.html"><i class="icon-money"></i>&nbsp;Green Combat</a></li>
+				<li><a href="/Naturathon.html"><i class="icon-user"></i>&nbsp;Naturathon</a></li>
+				<li><a href="/Samadhan.html"><i class="icon-volume-up"></i>&nbsp;Samadhan</a></li>
+				<li><a href="/Sangram.html"><i class="icon-lightbulb"></i>&nbsp;Sangram</a></li>
+				<li><a href="/Spotify.html"><i class="icon-eye-open"></i>&nbsp;Spotify</a></li>
+				<li><a href="/Utopia.html"><i class="icon-pencil"></i>&nbsp;Utopia</a></li>
+			</ul>
+			<br><br>
+			<h2>Informal Events</h2>
+			<ul>
+				<li><a href="/RakeUp.html"><i class="icon-gift"></i>&nbsp;Rake Up</a></li>
+				<li><a href="/ReInnovate.html"><i class="icon-refresh icon-spin"></i>&nbsp;Re-Innovate</a></li>
+				<li><a href="/Click.html"><i class="icon-camera"></i>&nbsp;Click</a></li>
+				<li><a href="/Target.html"><i class="icon-fighter-jet"></i>&nbsp;Target</a></li>
+				<li><a href="/CollageMaking.html"><i class="icon-picture"></i>&nbsp;Collage Making</a></li>
+				<li><a href="/ScrapIt.html"><i class="icon-edit"></i>&nbsp;Scrap It</a></li>
+				<li><a href="/PaperBagMaking.html"><i class="icon-envelope"></i>&nbsp;Paper Bag Making</a></li>
+			</ul>
+			<br><br>
+		</div>
+		</div>
+		<div class="meny-arrow"></div>
+
+<!-- Home Page Contents -->
+		<div class="contents">
+		<div id="wrap">
+
+      <!-- Begin page content -->
+      <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+			
+            <a class="brand" href="/" name="Home"><font color=white><i class="icon-asterisk icon-spin"></i>&nbsp;Haritima</a></font>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="/"><i class="icon-bookmark"></i>&nbsp;Home</a></li>
+                <li><a href="/AboutHaritima.html"><i class="icon-leaf"></i>&nbsp;About Haritima</a></li>
+                <li><a href="/AboutEcoClub.html"><i class="icon-globe"></i>&nbsp;About Eco Club</a></li>
+				<li><a href="/Register.html"><i class="icon-pencil"></i>&nbsp;Register</a></li>
+				<li><a href="/ContactUs.html"><i class="icon-comments-alt"></i>&nbsp;Contact Us</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+	<a name="Top" href="#" rel="tooltip"  title="Move towards the left of screen to get the Main Menu">
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/examples/1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="img/examples/2.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="img/examples/3.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="img/examples/4.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="img/examples/5.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="img/examples/6.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="img/examples/7.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="img/examples/8.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="img/examples/9.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="img/examples/10.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="img/examples/11.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="img/examples/12.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="img/examples/13.jpg" alt="">
+        </div>
+		<div class="item">
+          <img src="img/examples/14.jpg" alt="">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+	</a><!-- /.carousel -->
+	<div class="Ticker"><marquee behaviour="alternate" onmouseover="this.stop();" onmouseout="this.start();" scrolldelay="5" scrollamount="8"><i class="icon-leaf"></i>&nbsp;Haritima | हरितिमा&nbsp;<i class="icon-leaf"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The First Environment Related Fest to be orgainsed in Uttarakhand!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Event Details have been uploaded !</marquee></div>
+	<div class="pull-left"><img src="img/examples/right.png" /></div>
+	<div class="pull-right">
+	<a href="#1">
+	<img src="img/examples/down.png"/>
+	</a>
+	</div>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+      <!-- START THE FEATURETTES -->
+	<a name="1"></a>
+      
+	<hr class="featurette-divider">
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="img/examples/First.png">
+        <h2 class="featurette-heading">First Environmental Fest. <span class="muted">It'll capture your mind.</span></h2>
+        <p class="lead">First Environmental Fest to be organised in Uttarakhand Region! It will be one of its kind college festival related to only Environment.<br> It is a 4 day event and has events that will be totally Eco-friendly, and will play a very important part in the motivation of the students towards their duties to nature.</p>
+      <div class="pull-right">
+	<a href="#Top">
+	<img src="img/examples/up.png"/>
+	</a>
+	<a href="#2">
+	<img src="img/examples/down.png"/>
+	</a>
+	</div>
+	  </div>
+	  
+<a name="2"></a>
+      <hr class="featurette-divider">
+      <div class="featurette">
+	  <div class="pull-right">
+	<a href="#1">
+	<img src="img/examples/up.png"/>
+	</a>
+	</div>
+	  
+        <img class="featurette-image pull-left" src="img/examples/Youth.png">
+        <h2 class="featurette-heading">For the Youth. <span class="muted">By the Youth.</span></h2>
+        <p class="lead">The fest aims at empowering the young to  know about the environment they live in and motivate them towards its conservation. </p>
+      </div>
+	  
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#Top">Back to top</a></p>
+        <p>Made By&nbsp;<a href="http://www.facebook.com/xerosanyam" target="_blank"><font color="Blue">Sanyam Jain</font></a>.
+		Contact him&nbsp;<a href="mailto:xerosanyam@gmail.com"><font color="Blue">xerosanyam@gmail.com</font></a>.</p>
+      </footer>
+
+    </div><!-- /.container -->
+		</div>
+		</div>
+		<br>
+		<!-- The contents of curtain (if there's no contents the ribbon acts as a link) -->
+		<div class="forkit-curtain">
+			<div class="close-button"></div>
+			<font color="#ccc">
+			<h1><u>Organising Team</u></h1></font>
+			<br>
+			<font color="#fff">
+			<h1><b>Eco Club COER</b></h1>
+			<h2>Convener : <b>Dr. Romesh Kumar Sharma</b></h2>
+			<h2>Coordinator: Pranav Pant</h2>
+			<h2>Co-Coordinator: Shivam Chaurasia</h2>
+			<br>
+			<h3>and 80 other members.</h3>
+			<br><br><br><br>
+		</font>
+		
+		<h4><font color="#fff">This website is an open source project, and is developed and maintained by <a href="https://www.facebook.com/xerosanyam">Sanyam Jain</a>.</font></h4>
+		</div>
+			
+		<!-- The ribbon -->
+		<a class="forkit" data-text="CLICK HERE" data-text-detached="Drag down >" href="https://github.com/hakimel/forkit.js">
+		<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub">
+		</a>
+		<script src="js/forkit.js"></script>
+		<script src="js/meny.min.js"></script>
+		<script>
+			// Create an instance of Meny
+			var meny = Meny.create({
+				// The element that will be animated in from off screen
+				menuElement: document.querySelector( '.meny' ),
+
+				// The contents that gets pushed aside while Meny is active
+				contentsElement: document.querySelector( '.contents' ),
+
+				// [optional] The alignment of the menu (top/right/bottom/left)
+				position: Meny.getQuery().p || 'left',
+
+				// [optional] The height of the menu (when using top/bottom position)
+				height: 200,
+
+				// [optional] The width of the menu (when using left/right position)
+				width: 260,
+
+				// [optional] Distance from mouse (in pixels) when menu should open
+				threshold: 80
+			});
+
+			// API Methods:
+			// meny.open();
+			// meny.close();
+			// meny.isOpen();
+			
+			// Events:
+			// meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
+			// meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+
+			// Embed an iframe if a URL is passed in
+			if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
+				var contents = document.querySelector( '.contents' );
+				contents.style.padding = '0px';
+				contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+			}
+		</script>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+	
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel({
+		  interval: 4000
+		  })
+        })
+      }(window.jQuery)
+	  function open_win()
+{
+window.open("http://www.w3schools.com")
+}
+    </script>
+  </body>
+</html>
